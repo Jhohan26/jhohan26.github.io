@@ -1,0 +1,89 @@
+:root{
+	--background: #101020;
+	--dark-background: #080810;
+	--light-background: #202030;
+	--foreground: #c0c0ff;
+	--negro: #040408;
+	--azul: #1793d3;
+	--morado: #cb8aff;
+	--rojo: #f7768e;
+	--verde: #9ece6a;
+	--naranja: #ff9e64;
+}
+@font-face{
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu.ttf");
+}
+@font-face{
+	font-family: "Jetbrains Mono";
+	src: url("../fonts/JetBrainsMono.ttf");
+}
+@font-face{
+	font-family: "Jetbrains Mono NL";
+	src: url("../fonts/JetBrainsMonoNL.ttf");
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--foreground);
+	font-size: 1.4vw;
+	font-family: "Ubuntu", "sans-serif";
+	transition: all 300ms ease-in-out;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: var(--background);
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 6vw;
+	border: 1px solid red;
+	padding: 0.5vw 3vw;
+}
+.icono{
+	display: block;
+	background-image: url("../icons/logo_white.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 5vw;
+	width: 5vw;
+}
+.menu{
+	display: flex;
+	list-style: none;
+	gap: 2vw;
+	font-weight: bold;
+}
+.menu a{
+	text-decoration: none;
+	border-bottom: 0.2vw solid transparent;
+}
+.menu a:hover{
+	border-bottom: 0.2vw solid var(--foreground);
+}
+.tema{
+	position: fixed;
+	bottom: 3vw;
+	right: 3vw;
+	border-radius: 50%;
+	border: 0.2vw solid var(--foreground);
+	width: 4vw;
+	height: 4vw;
+	background-image: url("../icons/sol.svg");
+	background-size: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	opacity: 0.8;
+}
+.tema:hover{
+	opacity: 1;
+}
