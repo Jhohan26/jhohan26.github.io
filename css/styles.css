@@ -50,14 +50,14 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 6vw;
-	padding: 0.5vw 4vw;
+	height: 5.4vw;
+	padding: 0 5vw;
 	z-index: 20;
 	outline: 0.2vw solid transparent;
 }
 header:hover{
 	background-color: #040408bb;
-	backdrop-filter: blur(0.2vw);
+	backdrop-filter: blur(0.4vw);
 	outline: 0.2vw solid var(--light-background);
 }
 .icono{
@@ -66,8 +66,8 @@ header:hover{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 5vw;
-	width: 5vw;
+	height: 80%;
+	aspect-ratio: 1/1;
 }
 .icono:hover{
 	filter: drop-shadow(0 0 2vw var(--foreground));
@@ -75,7 +75,7 @@ header:hover{
 .menu{
 	display: flex;
 	list-style: none;
-	gap: 2.4vw;
+	gap: 3vw;
 	font-weight: bold;
 }
 .menu a{
@@ -102,6 +102,7 @@ header:hover{
 }
 .tema:hover{
 	opacity: 1;
+	filter: drop-shadow(0 0 1vw var(--foreground));
 	cursor: pointer;
 }
 main{
@@ -164,6 +165,7 @@ h2{
 .descripcion div{
 	width: 50%;
 	opacity: 0.7;
+	background-color: var(--dark-background);
 }
 .resumen{
 	display: flex;
@@ -189,4 +191,14 @@ h2{
 }
 img{
 	width: 50%;
+}
+.resumen:hover{
+	transform: scale(1.1) rotate(-2deg);
+	opacity: 1;
+	z-index: 5;
+}
+.foto:hover{
+	transform: scale(1.1) rotate(2deg);
+	opacity: 1;
+	z-index: 5;
 }
