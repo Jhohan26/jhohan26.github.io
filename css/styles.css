@@ -22,6 +22,11 @@
 	font-family: "Jetbrains Mono NL";
 	src: url("../fonts/JetBrainsMonoNL.ttf");
 }
+@keyframes scroll{
+	to{
+		transform: translate(calc(-50% - 0.5vw));
+	}
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -189,9 +194,6 @@ h2{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-img{
-	width: 50%;
-}
 .resumen:hover{
 	transform: scale(1.1) rotate(-2deg);
 	opacity: 1;
@@ -201,4 +203,95 @@ img{
 	transform: scale(1.1) rotate(2deg);
 	opacity: 1;
 	z-index: 5;
+}
+
+/*proyecto*/
+.galeria{
+	display: flex;
+	width: 80vw;
+	height: 33vw;
+	margin: 2vw auto;
+	background-color: var(--negro);
+}
+.galeria div{
+	width: 0%;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: 0.4;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+}
+.galeria div:hover{
+	width: 40%;
+	opacity: 1;
+}
+.galeria div p{
+	width: 25vw;
+	text-align: center;
+	margin: auto;
+	padding: 1vw;
+	border-radius: 1vw;
+	color: transparent;
+}
+.galeria div:hover > p{
+	background-color: #000a;
+	color: #fff;
+}
+.virus{
+	background-image: url("../img/virus.jpg");
+}
+.parkour{
+	background-image: url("../img/parkour.png");
+}
+.todo{
+	background-image: url("../img/ToDo.png");
+}
+.trabalenguas{
+	background-image: url("../img/trabalenguas.png");
+}
+
+/*habilidades*/
+.scroll{
+	width: 70%;
+	overflow: hidden;
+	margin: 1vw auto;
+}
+.elementos{
+	padding-block: 1vw;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1vw;
+	list-style: none;
+}
+.elementos li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8vw;
+	padding: 1.8vw;
+	background-color: var(--light-background);
+	border-radius: 1vw;
+	box-shadow: 0 0 1vw var(--negro);
+}
+.elementos li img{
+	display: block;
+	margin: auto;
+	height: 12vw;
+}
+.scroll[data-animated=true]{
+	overflow: hidden;
+	mask: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+	-webkit-mask: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+.scroll[data-animated=true] .texto{
+	width: max-content;
+	flex-wrap: nowrap;
+	animation: scroll 40s linear infinite;
+}
+.scroll[data-animated=true] .imagenes{
+	width: max-content;
+	flex-wrap: nowrap;
+	animation: scroll 30s linear infinite;
 }
