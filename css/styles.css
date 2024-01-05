@@ -41,14 +41,24 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 }
+
+/*menu*/
 header{
+	position: fixed;
 	display: flex;
+	top: 0;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
 	width: 100%;
 	height: 6vw;
-	padding: 0.5vw 3vw;
+	padding: 0.5vw 4vw;
+	z-index: 20;
+	outline: 0.2vw solid transparent;
+}
+header:hover{
+	background-color: #040408bb;
+	backdrop-filter: blur(0.2vw);
+	outline: 0.2vw solid var(--light-background);
 }
 .icono{
 	display: block;
@@ -58,6 +68,9 @@ header{
 	background-repeat: no-repeat;
 	height: 5vw;
 	width: 5vw;
+}
+.icono:hover{
+	filter: drop-shadow(0 0 2vw var(--foreground));
 }
 .menu{
 	display: flex;
@@ -101,6 +114,8 @@ h1, h2, h3, h4{
 	text-align: center;
 	margin: 2vw 0;
 }
+
+/*inicio*/
 .inicio{
 	display: flex;
 	flex-direction: column;
@@ -132,4 +147,46 @@ h4{
 	height: 5vw;
 	font-size: 4vw;
 	color: var(--morado);
+}
+
+/*sobre mi*/
+h2{
+	font-size: 3vw;
+}
+.descripcion{
+	display: flex;
+	width: 80%;
+	height: 33vw;
+	margin: auto;
+	background-color: var(--dark-background);
+	border-radius: 2vw;
+}
+.descripcion div{
+	width: 50%;
+	opacity: 0.7;
+}
+.resumen{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 2vw 0 0 2vw;
+	padding: 4vw;
+	padding: 2vw 5vw;
+	line-height: 2.4vw;
+}
+.resumen p{
+	font-size: 1.6vw;
+}
+.resumen .autor{
+	font-size: 1.2vw;
+}
+.foto{
+	border-radius: 0 2vw 2vw 0;
+	height: 100%;
+	background-image: url("../img/Jhohan.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+img{
+	width: 50%;
 }
