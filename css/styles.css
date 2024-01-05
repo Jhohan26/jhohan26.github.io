@@ -62,7 +62,7 @@ header{
 .menu{
 	display: flex;
 	list-style: none;
-	gap: 2vw;
+	gap: 2.4vw;
 	font-weight: bold;
 }
 .menu a{
@@ -91,20 +91,26 @@ header{
 	opacity: 1;
 	cursor: pointer;
 }
+main{
+	padding-top: 3vw;
+}
 section{
-	margin-bottom: 4vw;
+	padding-top: 5vw;
+}
+h1, h2, h3, h4{
+	text-align: center;
+	margin: 2vw 0;
 }
 .inicio{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 10vw;
 }
 h1{
 	text-align: center;
 }
 h1 o{
-	padding: 0 0.4vw;
+	padding: 0 0.6vw;
 	font-family: "Jetbrains Mono NL", "monospace;";
 	font-size: 8vw;
 	outline: 0.1vw solid var(--foreground);
