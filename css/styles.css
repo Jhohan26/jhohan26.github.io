@@ -65,7 +65,7 @@ header{
 	z-index: 20;
 	outline: 0.2vw solid transparent;
 }
-header:hover{
+.headerOscuro{
 	background-color: #040408bb;
 	backdrop-filter: blur(0.4vw);
 	outline: 0.2vw solid var(--light-background);
@@ -115,15 +115,15 @@ header:hover{
 	filter: drop-shadow(0 0 1vw var(--foreground));
 	cursor: pointer;
 }
-main{
-	padding-top: 3vw;
-}
 section{
 	padding-top: 6vw;
 }
 h1, h2, h3, h4{
 	text-align: center;
 	margin: 2vw 0;
+}
+h2{
+	margin-top: 0;
 }
 
 /*inicio*/
