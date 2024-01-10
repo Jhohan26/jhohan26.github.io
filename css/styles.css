@@ -95,6 +95,9 @@ header{
 .menu a:hover{
 	border-bottom: 0.2vw solid var(--foreground);
 }
+.menu .activo{
+	border-bottom: 0.2vw solid var(--foreground);
+}
 .tema{
 	position: fixed;
 	bottom: 3vw;
