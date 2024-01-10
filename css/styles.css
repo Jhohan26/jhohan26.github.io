@@ -131,6 +131,7 @@ h2{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 8vw;
 }
 h1{
 	text-align: center;
@@ -342,4 +343,58 @@ article p{
 	font-size: 1.2vw;
 	line-height: 1.8vw;
 	text-align: center;
+}
+
+/*pie de pagina*/
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2vw 2vw 1vw;
+	background-color: var(--negro);
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+	gap: 1vw;
+	list-style: none;
+	margin: 2vw;
+}
+footer li{
+	border-radius: 50%;
+}
+.facebook{
+	background: #1177f7;
+}
+.instagram{
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.github{
+	background: #1b1e23;
+}
+footer div{
+	display: flex;
+	width: 3.6vw;
+	height: 3.6vw;
+	justify-content: center;
+	align-items: center;
+	background: #c0c0ff33;
+	padding: 0.6vw;
+	border-radius: 50%;
+}
+footer div:hover{
+	transform: translate(0.4vw, 0.4vw) rotate(20deg);
+}
+footer img{
+	height: 100%;
+}
+.logoPie{
+	width: 6vw;
+	margin: 2vw 0 1vw;
+}
+.logoPie:hover{
+	transform: translateY(-1.4vw) scale(1.4);
+}
+footer p{
+	font-size: 1vw;
 }
