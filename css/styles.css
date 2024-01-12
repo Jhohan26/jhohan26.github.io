@@ -69,12 +69,10 @@ header{
 	height: 5.4vw;
 	padding: 0 5vw;
 	z-index: 20;
-	outline: 0.2vw solid transparent;
 }
 .headerOscuro{
 	background-color: #040408bb;
 	backdrop-filter: blur(0.4vw);
-	outline: 0.2vw solid var(--light-background);
 }
 .icono{
 	display: block;
@@ -117,10 +115,10 @@ header{
 	position: fixed;
 	bottom: 3vw;
 	right: 3vw;
-	border-radius: 50%;
 	border: 0.2vw solid var(--foreground);
 	width: 4vw;
 	height: 4vw;
+	border-radius: 50%;
 	background-image: url("../icons/sol.svg");
 	background-size: 75%;
 	background-position: center;
@@ -131,7 +129,6 @@ header{
 	animation: mover 1000ms ease 700ms forwards;
 }
 .tema:hover{
-	opacity: 1;
 	filter: drop-shadow(0 0 1vw var(--foreground));
 	cursor: pointer;
 }
@@ -163,7 +160,8 @@ h1 o{
 	padding: 0 0.6vw;
 	font-family: "Jetbrains Mono NL", "monospace;";
 	font-size: 8vw;
-	outline: 0.1vw solid var(--foreground);
+	outline: 0.2vw solid var(--foreground);
+	outline-offset: -0.1vw;
 }
 .simbolo{
 	color: var(--verde);
@@ -426,6 +424,7 @@ footer img{
 }
 .logoPie{
 	width: 6vw;
+	height: 7vw;
 	margin: 2vw 0 1vw;
 }
 .logoPie:hover{
@@ -433,4 +432,51 @@ footer img{
 }
 footer p{
 	font-size: 1vw;
+}
+
+[data-theme="light"]{
+	--background: #e0e0ff;
+	--dark-background: #cad5fe;
+	--light-background: #bbddff;
+	--foreground: #101642;
+	--azul: #1793ff;
+	--negro: #080810;
+	--morado: #db4be5;
+	--rojo: #ff465e;
+	--verde: #96dd00;
+	--naranja: #ff6040;
+	--transparente: #00000000;
+	body{
+		background-image: url("../img/background_claro.png");
+	}
+	.headerOscuro{
+		background: #e0e0ffbb;
+	}
+	.icono{
+		background-image: url("../icons/logo_black.png");
+	}
+	.tema{
+		background-image: url("../icons/luna.svg");
+	}
+	.foto{
+		background-image: url("../img/Jhohan_claro.jpg");
+	}
+	.galeria{
+		background-color: var(--light-background);
+	}
+	.galeria div{
+		opacity: 0.7;
+	}
+	.galeria div:hover{
+		opacity: 1;
+	}
+	.elementos li{
+	box-shadow: 0 0 .6vw #1793ffbb;
+	}
+	footer{
+		background-color: var(--foreground);
+	}
+	footer p{
+		color: var(--light-background);
+	}
 }
