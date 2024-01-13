@@ -445,7 +445,6 @@ footer p{
 	--rojo: #ff465e;
 	--verde: #96dd00;
 	--naranja: #ff6040;
-	--transparente: #00000000;
 	body{
 		background-image: url("../img/background_claro.png");
 	}
