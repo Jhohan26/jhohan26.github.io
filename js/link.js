@@ -8,7 +8,6 @@ function quitarSubrayado(excepto){
 
 function ponerSubrayado(){
 	let altura = window.scrollY;
-	console.log(altura);
 	let header = document.getElementsByTagName("header")[0].offsetHeight;
 	let inicio = document.getElementById("inicio").offsetHeight;
 	let sobreMi = document.getElementById("sobremi").offsetHeight;
