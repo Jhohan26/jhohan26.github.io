@@ -97,9 +97,9 @@ header{
 }
 .menu li{
 	opacity: 0;
-	transform: translateX(5vw);
+	transform: translateX(4vw);
 	animation: mover 600ms ease forwards;
-	animation-delay: calc(1000ms + var(--tiempo) * 200ms);
+	animation-delay: calc(1000ms + var(--tiempo) * 150ms);
 }
 .menu a{
 	text-decoration: none;
@@ -130,14 +130,15 @@ header{
 	height: 1vw;
 	width: 100%;
 	transform-origin: left;
+	border-radius: 0.4vw;
 }
-.burguer:hover div:first-child{
+.equis:hover div:first-child{
 	transform: rotate(45deg);
 }
-.burguer:hover div:nth-child(2){
+.equis:hover div:nth-child(2){
 	opacity: 0;
 }
-.burguer:hover div:last-child{
+.equis:hover div:last-child{
 	transform: rotate(-45deg);
 }
 .tema{
@@ -521,10 +522,37 @@ footer p{
 	}
 	.menu{
 		display: none;
+		padding-top: 20vw;
+		position: absolute;
+		height: 120vh;
+		width: 100%;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		background-color: var(--dark-background);
+		opacity: 0.9;
+		align-items: center;
+		gap: 10vw;
+	}
+	.menu a{
+		border-bottom: 1vw solid transparent;
+	}
+	.menu a:hover{
+		border-bottom: 1vw solid var(--foreground);
+	}
+	.menu .activo{
+		border-bottom: 1vw solid var(--foreground);
+	}
+	.menu li{
+	animation-delay: calc(var(--tiempo) * 150ms);
+	}
+	.menu li a{
+		font-size: 10vw;
 	}
 	.burguer{
 		display: flex;
 		animation: mover 1000ms ease 700ms forwards;
+		cursor: pointer;
 	}
 	.tema{
 		width: 12vw;
@@ -599,6 +627,7 @@ footer p{
 		height: 40vw;
 	}
 	.galeria div p{
+		font-size: 3.2vw;
 		width: 75%;
 	}
 	.scroll{
@@ -617,13 +646,15 @@ footer p{
 	}
 	.columnas{
 		flex-direction: column;
-		gap: 6vw;
+		gap: 10vw;
+		margin: 8vw auto;
 	}
 	article{
-		border-radius: 2vw;
+		border-radius: 4vw;
 	}
 	article div{
 		height: 50vw;
+		border-radius: 4vw 4vw 0 0;
 	}
 	article:hover img{
 		transform: scale(1.2);
