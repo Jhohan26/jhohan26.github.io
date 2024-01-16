@@ -18,10 +18,6 @@
 	font-family: "Jetbrains Mono";
 	src: url("../fonts/JetBrainsMono.ttf");
 }
-@font-face{
-	font-family: "Jetbrains Mono NL";
-	src: url("../fonts/JetBrainsMonoNL.ttf");
-}
 @keyframes rebotar{
 	from{
 		transform: translateX(2vw);
@@ -52,7 +48,7 @@ html{
 }
 body{
 	background-color: var(--background);
-	background-image: url("../img/background.png");
+	background-image: url("../img/background.avif");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -76,7 +72,7 @@ header{
 }
 .icono{
 	display: block;
-	background-image: url("../icons/logo_white.png");
+	background-image: url("../icons/logo_white.avif");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -132,13 +128,13 @@ header{
 	transform-origin: left;
 	border-radius: 0.4vw;
 }
-.equis:hover div:first-child{
+.equis div:first-child{
 	transform: rotate(45deg);
 }
-.equis:hover div:nth-child(2){
+.equis div:nth-child(2){
 	opacity: 0;
 }
-.equis:hover div:last-child{
+.equis div:last-child{
 	transform: rotate(-45deg);
 }
 .tema{
@@ -186,13 +182,14 @@ h1{
 	opacity: 0;
 	transform: translateY(16vw);
 	animation: mover 1000ms ease forwards;
+	font-variant-ligatures: none;
 }
 h1 o{
 	padding: 0 0.6vw;
-	font-family: "Jetbrains Mono NL", "monospace;";
 	font-size: 8vw;
 	outline: 0.2vw solid var(--foreground);
 	outline-offset: -0.1vw;
+	font-family: "Jetbrains Mono", "monospace";
 }
 .simbolo{
 	color: var(--verde);
@@ -208,7 +205,6 @@ h4{
 	animation: mover 800ms ease 300ms forwards;
 }
 .flecha{
-	font-family: "Jetbrains Mono", "monospace";
 	rotate: 90deg;
 	width: 5vw;
 	height: 5vw;
@@ -219,7 +215,7 @@ h4{
 }
 .flecha p{
 	width: 5vw;
-	font-family: "JetBrains Mono";
+	font-family: "JetBrains Mono", "monospace";
 	text-align: center;
 	font-size: 4vw;
 	color: var(--morado);
@@ -260,7 +256,7 @@ h2{
 .foto{
 	border-radius: 0 2vw 2vw 0;
 	height: 100%;
-	background-image: url("../img/Jhohan.jpg");
+	background-image: url("../img/Jhohan.avif");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -310,16 +306,16 @@ h2{
 	color: #fff;
 }
 .virus{
-	background-image: url("../img/virus.jpg");
+	background-image: url("../img/virus.avif");
 }
 .parkour{
-	background-image: url("../img/parkour.png");
+	background-image: url("../img/parkour.avif");
 }
 .todo{
-	background-image: url("../img/ToDo.png");
+	background-image: url("../img/ToDo.avif");
 }
 .trabalenguas{
-	background-image: url("../img/trabalenguas.png");
+	background-image: url("../img/trabalenguas.avif");
 }
 
 /*habilidades*/
@@ -475,19 +471,19 @@ footer p{
 	--verde: #96dd00;
 	--naranja: #ff6040;
 	body{
-		background-image: url("../img/background_claro.png");
+		background-image: url("../img/background_claro.avif");
 	}
 	.headerOscuro{
 		background: #e0e0ffbb;
 	}
 	.icono{
-		background-image: url("../icons/logo_black.png");
+		background-image: url("../icons/logo_black.avif");
 	}
 	.tema{
 		background-image: url("../icons/luna.svg");
 	}
 	.foto{
-		background-image: url("../img/Jhohan_claro.jpg");
+		background-image: url("../img/Jhohan_claro.avif");
 	}
 	.galeria{
 		background-color: var(--light-background);
